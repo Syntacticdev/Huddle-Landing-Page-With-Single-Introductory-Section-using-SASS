@@ -21,6 +21,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding: 20px 0 0 0;
+  min-height: 100vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .section-one img {
@@ -95,7 +99,7 @@ footer .social .fab:hover {
   border-color: #e882e8;
 }
 
-@media (max-width: 960px) {
+@media only screen and (max-width: 940px) {
   header .logo-img {
     width: 40%;
     padding-top: 30px;
@@ -106,10 +110,19 @@ footer .social .fab:hover {
     background-size: cover;
   }
   .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .section-two {
     text-align: center;
