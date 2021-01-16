@@ -88,17 +88,9 @@ footer {
     
 }
 
-@media (min-width: 1440px){
-    body {
-        min-width: 1440px;
-    }
 
-    .container * {
-        width: 100%;
-    }
-}
 
-@media (max-width: 768px){
+@media (max-width: 960px){
     header{
         .logo-img {
             width: 40%;
