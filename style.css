@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #fff;
+}
+
+body {
+  background: url(./images/bg-desktop.svg), #674baf;
+  padding: 0 50px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0 0 0;
+}
+
+.section-one img {
+  width: 100%;
+}
+
+.section-two {
+  padding: 0 50px;
+  max-width: 600px;
+  margin-top: 50px;
+}
+
+.section-two h2 {
+  font-family: Poppins;
+  font-size: 30px;
+  color: var(--primary-color);
+  max-width: 400px;
+}
+
+.section-two p {
+  font-family: 'Open Sans';
+  font-size: 15px;
+  padding: 20px 0 30px 0;
+  color: var(--primary-color);
+}
+
+.section-two a {
+  background-color: var(--primary-color);
+  color: #e882e8;
+  padding: 12px 50px;
+  border-radius: 30px;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.section-two a:hover {
+  background-color: #e882e8;
+  color: #fff;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .social {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+footer .social a {
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+footer .social .fab {
+  background: transparent;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+footer .social .fab:hover {
+  color: #e882e8;
+  border-color: #e882e8;
+}
+
+@media (min-width: 1440px) {
+  body {
+    min-width: 1440px;
+  }
+  .container * {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  header .logo-img {
+    width: 40%;
+    padding-top: 30px;
+  }
+  body {
+    background: url(./images/bg-mobile.svg), #674baf;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-two {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .section-two h2 {
+    font-size: 18px;
+    font-weight: 900;
+    max-width: 600px;
+  }
+  footer {
+    margin-top: 20px;
+  }
+  footer .social {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding: 20px 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
